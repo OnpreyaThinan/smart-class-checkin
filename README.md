@@ -14,7 +14,7 @@ This is a prototype mobile application built with Flutter that allows students t
 - Cloud sync to Firebase Firestore (when Firebase is configured)
 
 ## Submission Links
-- GitHub Repository: https://github.com/your-username/your-repo
+- GitHub Repository: https://github.com/OnpreyaThinan/smart-class-checkin
 - Firebase Hosting URL: https://smart-class-check-in-5322e.web.app/
 
 ## Setup Instructions
