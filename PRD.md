@@ -57,7 +57,7 @@ Universities need a simple way to confirm that students are physically present i
 - Frontend: Flutter mobile app with 3 main screens (Home, Check-in, Finish Class)
 - Device Services: QR scanning and GPS location retrieval on device
 - Local Persistence: SharedPreferences for offline-friendly record storage
-- Optional Cloud Layer: Firebase Firestore can be added for centralized analytics and instructor dashboard
+- Cloud Layer: Firebase Firestore for record sync and centralized analytics
 
 ### Data Flow
 1. Student opens app and chooses Check-in or Finish Class from Home.
@@ -65,7 +65,8 @@ Universities need a simple way to confirm that students are physically present i
 3. App scans QR code and captures current GPS coordinates.
 4. App creates a record object with timestamp + form data + QR + location.
 5. App writes record to local storage.
-6. App shows success feedback and returns to Home screen.
+6. App attempts cloud sync to Firebase Firestore.
+7. App shows save/sync feedback and returns to Home screen.
 
 ### Record Structure Examples
 ```json
